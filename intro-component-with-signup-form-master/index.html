@@ -2,41 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Frontend Mentor | Intro component with sign up form</title>
+  <script defer src="src/script.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="src/styles.css">
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+  
+  <title>Sign Up Form Challenge</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  Learn to code by watching others
-
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
-
-  Try it free 7 days then $20/mo. thereafter
-
-  First Name 
-  Last Name 
-  Email Address
-  Password
-
-  Claim your free trial 
-
-  By clicking the button, you are agreeing to our Terms and Services
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+  <div class="containerAll">
+    
+    <h1>Learn to code by watching others</h1>
+    <p>
+      See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+      but understanding how developers think is invaluable. 
     </p>
-  </footer>
+
+    <div class="textTrial">
+      <p><b>Try it free 7 days</b> then $20/mo. thereafter</p>
+    </div>
+    
+    <form id="form">
+      <span class="showInputErr"></span>
+      <label for="fname"></label>
+      <input type="text" name="fname" id="fname" placeholder="First Name">
+   
+      <label for="lname"></label>
+      <input type="text" name="lname" id="lname" placeholder="Last Name">
+ 
+      <label for="email"></label>
+      <input type="email" name="email" id="email" placeholder="Email Address">
+   
+      <label for="password" id="labelPassword"></label>
+      <input type="password" name="password" id="password" placeholder="Password">
+
+      <button type="submit" id="btn">Claim your free trial</button>
+      <p> By clicking the button, you are agreeing to our <b id="term">Terms and Services</b></p> 
+    </form>
+ 
+  </div>
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        &nbsp; 
+        Coded by <a href="https://github.com/ShannanGonser">Shannan Gonser</a>.
+      </p>
+    </footer>
 </body>
 </html>
